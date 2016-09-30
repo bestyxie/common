@@ -75,6 +75,7 @@ $.fn.upload_pic = function(param){
 
     $('.j-preview .j-delete').on('click',function(){
       thisInput.val('');
+      canvas = '';
       $(thisInput.param.target).attr('src','');
 
       if(thisInput.param.isClip){
