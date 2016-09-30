@@ -224,5 +224,11 @@ $.fn.upload_pic = function(param){
     });
   }
 
+  this.delete_img = function(){
+    this.canvas = '';
+  }
+
   _init();
+
+  return this;
 }
