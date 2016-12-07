@@ -1,0 +1,205 @@
+//
+// Reset CSS
+// Adapted from http://github.com/necolas/normalize.css
+// --------------------------------------------------
+
+
+@charset "UTF-8";html {
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 100%;
+    color: #000;
+    background-color: #FFF
+}
+
+body {
+    margin: 0;
+    word-wrap: break-word
+}
+
+:active {
+    outline: 0
+}
+
+:visited {
+    outline: 0
+}
+
+:link,:visited,ins {
+    text-decoration: none
+}
+
+// Base settings
+// -------------------------
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,figure,
+fieldset,legend,input,textarea,p,blockquote,th,td,hr,button {margin: 0; padding: 0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
+    display: block
+}
+
+audio,video,canvas {
+  display: inline-block;
+  *display: inline;
+  *zoom:1
+}
+audio:not([controls]) {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+fieldset,iframe {
+    border: 0 none
+}
+
+img {
+    border: 0 none;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle
+}
+address,caption,cite,code,dfn,em,i,th,var,optgroup {
+    font-style: normal;
+    font-weight: 400
+}
+address,caption,cite,code,dfn,em,i,th,var,optgroup {
+    font-style: normal;
+    font-weight: 400
+}
+
+h1,h2,h3,h4,h5,h6,code,kbd,samp,tt,sup,sub,small,input,button,textarea,select {
+    font-size: 100%
+}
+
+abbr,acronym {
+    border: 0 none;
+    font-variant: normal
+}
+
+input,button,textarea,select,optgroup,option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical
+}
+
+ol,ul,menu {
+    list-style: none outside none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td {
+    vertical-align: top
+}
+
+caption,th {
+    text-align: left
+}
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+blockquote,q {
+    quotes: none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none
+}
+
+mark {
+    background-color: #FF6
+}
+
+del {
+    text-decoration: line-through
+}
+abbr[title],dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+input,select,button {
+    vertical-align: middle
+}
+
+button {
+    width: auto;
+    cursor: pointer;
+    overflow: visible;
+    border: 0
+}
+
+input[type=checkbox],input[type=radio] {
+    box-sizing: border-box
+}
+button::-moz-focus-inner,input[type=file]>input[type=button]::-moz-focus-inner {
+    border: 0 none;
+    padding: 0
+}
+body {
+    color: #666;
+    font: 12px/1.5 tahoma,arial,sans-serif
+}
+
+* html {
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+* html,* html body {
+    background-image: url(about:blank);
+    background-attachment: fixed
+}
+li {
+  list-style: none;
+}
+i{
+  font-style: normal;
+}
+em {
+  font-style: normal;
+}
+
+a {
+  color: #5e5e5e;
+  text-decoration: none;
+
+  &:active {
+    outline: 0;
+  }
+}
+
+
+// Placeholder
+// -------------------------
+::-webkit-input-placeholder {  // WebKit browsers
+  color: #C3C3C3;
+}
+
+:-moz-placeholder {  // Mozilla Firefox 4 to 18
+  color: #C3C3C3;
+}
+
+::-moz-placeholder {  // Mozilla Firefox 19+
+  color: #C3C3C3;
+}
+
+:-ms-input-placeholder { // IE 10+
+  color: #C3C3C3;
+}
