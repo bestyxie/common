@@ -1,7 +1,8 @@
-//
-// Reset CSS
-// Adapted from http://github.com/necolas/normalize.css
-// --------------------------------------------------
+/******************************************
+ Reset CSS
+ Adapted from http://github.com/necolas/normalize.css
+ *******************************************/
+
 
 
 @charset "UTF-8";html {
@@ -30,8 +31,10 @@ body {
     text-decoration: none
 }
 
-// Base settings
-// -------------------------
+/********************************************************
+Base settings
+*********************************************************/
+
 body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,figure,
 fieldset,legend,input,textarea,p,blockquote,th,td,hr,button {margin: 0; padding: 0;}
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
@@ -179,15 +182,15 @@ em {
 a {
   color: #5e5e5e;
   text-decoration: none;
-
-  &:active {
-    outline: 0;
-  }
 }
+a:active {
+     outline: 0;
+ }
 
+/**************************************************************
+Placeholder
+***************************************************************/
 
-// Placeholder
-// -------------------------
 ::-webkit-input-placeholder {  // WebKit browsers
   color: #C3C3C3;
 }

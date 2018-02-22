@@ -1,4 +1,10 @@
- (function() {
+/**
+ * use for wap
+ * */
+
+
+
+(function() {
    var resize = function() {
      var html = document.documentElement;
      var clientWidth = html.clientWidth;
