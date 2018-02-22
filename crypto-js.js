@@ -1,4 +1,5 @@
 /** Base Usage
+ * 加密：
  * var key  = CryptoJS.enc.Utf8.parse(String);
  var encrypted = CryptoJS.AES.encrypt(str,key,{
         iv:key,
@@ -6,6 +7,13 @@
  });
  encrypted = encrypted.toString();
  *
+ * 解密：
+ * var key  = CryptoJS.enc.Utf8.parse(String);
+ var decrypted = CryptoJS.AES.decrypt(str,key,{
+        iv:key,
+        mode:CryptoJS.mode.ECB
+ });
+ decrypted = decrypted.toString(CryptoJS.enc.Utf8);
  * 更多用法参考https://www.npmjs.com/package/crypto-js*/
 
 
