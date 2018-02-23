@@ -14,7 +14,7 @@
         mode:CryptoJS.mode.ECB
  });
  decrypted = decrypted.toString(CryptoJS.enc.Utf8);
- * 更多用法参考https://www.npmjs.com/package/crypto-js*/
+ * 更多用法参考https://www.npmjs.com/package/crypto-js http://blog.csdn.net/its_my_dream/article/details/53041666*/
 
 
 
