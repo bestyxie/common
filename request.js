@@ -9,13 +9,13 @@
     }
     else {
         // Global (browser)
-        root.MD5 = factory();
+        root.request = factory();
     }
 })(this, function () {
     var request = {};
 
     request.get = function (url, success, fail){
-        if(!url) return throw new Error("requist url is required.");
+        if(!url) throw new Error("requist url is required.");
 
         var xhr = createXHR();
         xhr.onreadystatechange = function (){
@@ -34,7 +34,7 @@
     }
 
     request.post = function (url, data, success, fail){
-        if(!url) return throw new Error("requist url is required.");
+        if(!url) throw new Error("requist url is required.");
 
         var xhr = createXHR();
         xhr.onreadystatechange = function (){
