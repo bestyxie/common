@@ -16,7 +16,9 @@
 
 body {
     margin: 0;
-    word-wrap: break-word
+    word-wrap: break-word;
+    /*ipx*/
+    padding-top: constant(safe-area-inset-top);
 }
 
 :active {
