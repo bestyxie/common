@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="file" id="chooseImage"/>
+
+<script>
+    (function (){
+        document.querySelector("#chooseImage").addEventListener("change", function (e){
+            var file = e.target.files[0];
+            var base_img = new Image();
+
+            var reader = new FileReader();
+            reader.onload = function (e){
+
+                base_img.onload = function (){
+                    var img_w = this.naturalWidth,
+                        img_h = this.naturalHeight;
+
+                    var canvas = document.createElement("canvas");
+                    canvas.width = img_w;
+                    canvas.height = img_h;
+
+                    var ctx = canvas.getContext('2d');
+                    ctx.drawImage(base_img, 0,0, img_w, img_h);
+
+                    /*var imgData = ctx.getImageData(0, 0, img_w, img_h),
+                        data = imgData.data;
+                    for( var i = 0; i < data.length; i += 4 ) {
+                        data[i] += 30;
+                        data[i+1] += 30;
+                        data[i+2] += 30;
+                    }
+                    //处理完之后，再次输出
+                    ctx.putImageData(imgData, 0, 0);*/
+
+                    document.body.appendChild(canvas);
+                }
+                base_img.src = e.target.result;
+
+
+            };
+            reader.readAsDataURL(file);
+        })
+    })()
+</script>
+</body>
+</html>
