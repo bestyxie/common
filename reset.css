@@ -15,6 +15,8 @@
 }
 
 body {
+    font-family: "lucidagrande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    -webkit-font-smoothing: subpixel-antialiase;
     margin: 0;
     word-wrap: break-word;
     /*ipx*/
